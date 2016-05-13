@@ -1,0 +1,14 @@
+# Index Home
+GET         /                    index
+
+# Get books
+GET         /books               books
+GET         /books/:title        getBook
+
+# Get Rented books
+GET         /rents               rents
+
+# Create new book
+POST        /books/new           createBook
+
+GET         /*                   serveContent

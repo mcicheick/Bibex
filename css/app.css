@@ -1,0 +1,57 @@
+/* app css stylesheet */
+
+#main {
+    margin-top: 60px;
+}
+
+.books img.media-object {
+    display: block;
+    height: 120px;
+    width: 120px;
+    text-align: center;
+    line-height: 120px;
+}
+
+.books a {
+    text-decoration: none;
+}
+
+.books a .media-body p {
+    color: black;
+}
+
+.books .media:hover {
+    background-color: #f3ffed;
+}
+
+.navbar-default {
+    background-color: #67b168;
+    border-color: #00A000;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color: #fff;
+    background-color: #00A000;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
+}
+
+.navbar-default .navbar-brand, .navbar-default .navbar-brand:focus {
+    color: #fff;
+}
+
+.btn-login {
+    background: transparent;
+    border-color: #fff;
+}
+
+.btn-login:hover {
+    background: #fff !important;
+    color: #67b168 !important;
+}
+
+.navbar-right {
+    margin-right: 10px;
+}
