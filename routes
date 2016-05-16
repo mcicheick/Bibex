@@ -1,14 +1,14 @@
-# Index Home
-GET         /                    index
+# Books Controller
+GET         /                 books.index
+GET         /books            books.books
+GET         /books/:id        books.getBook
+POST        /books/new        books.createBook
+GET         /search           books.doSearch
 
-# Get books
-GET         /books               books
-GET         /books/:title        getBook
+GET         /users/:id         users.getUser
+POST        /users/new        users.createUser
+POST        /login            users.login
 
-# Get Rented books
-GET         /rents               rents
-
-# Create new book
-POST        /books/new           createBook
-
-GET         /*                   serveContent
+# Assets
+GET         /public/*         assets.serveContent
+GET         /views/*          assets.serveContent

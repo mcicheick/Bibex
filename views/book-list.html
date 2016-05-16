@@ -1,16 +1,10 @@
-<div class="container">
+<div class="col-md-9">
     <div class="books">
-        <div ng-repeat="book in books" id="book-{{book.id}}" class="media">
-            <a href="#/books/{{book.title}}">
-                <div class="media-left">
-                    <img class="media-object"
-                         ng-src="{{book.cover}}"/>
-                </div>
-                <div class="media-body">
-                    <h4 class="media-heading">{{book.title}}</h4>
-                    <p>{{book.description}}</p>
-                </div>
-            </a>
-        </div>
+        <book-items></book-items>
+        <button class="btn btn-primary pull-right" ng-show="hasMore()" ng-click="nextPage()">Next
+        </button>
     </div>
+</div>
+<div class="col-md-3">
+    <search-box></search-box>
 </div>

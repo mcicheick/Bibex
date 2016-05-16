@@ -1,0 +1,30 @@
+<div class="book-new">
+    <form name="form">
+        <fieldset>
+            <span class="error" ng-hide="error.isEmpty()">{{error}}</span>
+            <div class="form-group">
+                <label for="title">Title</label>
+                <input id="title" type="text" class="form-control" data-ng-model="book.title" placeholder="Title"
+                       required/>
+            </div>
+            <div class="form-group">
+                <label for="author">Author</label>
+                <input id="author" type="text" class="form-control" data-ng-model="book.author" placeholder="Author"
+                       required/>
+            </div>
+
+            <div class="form-group">
+                <label for="author">Edition</label>
+                <input id="edition" type="text" class="form-control" data-ng-model="book.edition"
+                       placeholder="Edition"/>
+            </div>
+
+            <div class="form-group">
+                <label for="year">Year</label>
+                <input id="year" type="text" class="form-control" data-ng-model="book.year" placeholder="Year"/>
+            </div>
+            <button class="btn btn-primary" data-ng-disabled="form.$invalid" data-ng-click="postBook(book)">Create
+            </button>
+        </fieldset>
+    </form>
+</div>

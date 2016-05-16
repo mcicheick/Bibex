@@ -1,0 +1,13 @@
+<div ng-repeat="book in books" id="book-{{book._id}}" class="media">
+    <a href="#/books/{{book._id}}">
+        <div class="media-left">
+            <img class="media-object"
+                 ng-src="{{book.cover}}"/>
+        </div>
+        <div class="media-body">
+            <h4 class="media-heading">{{book.title}}</h4>
+            <p>{{book.author}}</p>
+            <p>{{book.edition}}</p>
+        </div>
+    </a>
+</div>

@@ -1,0 +1,12 @@
+<h3>Search for something</h3>
+<div id="custom-search-input">
+    <div class="input-group col-md-12">
+        <input ng-model="req.q" ng-keyup="doSearch()" type="text" class="form-control input-lg"
+               placeholder="Title, Author, Edition"/>
+        <span class="input-group-btn">
+            <button ng-click="doSearch()" class="btn btn-info btn-lg" type="button">
+                <i class="glyphicon glyphicon-search"></i>
+            </button>
+        </span>
+    </div>
+</div>
