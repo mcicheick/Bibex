@@ -1,6 +1,6 @@
 {
   "name": "bibex",
-  "description": "Nexeo Library",
+  "description": "Library",
   "version": "0.0.1",
   "homepage": "https://github.com/mcicheick/Bibex.git",
   "license": "MIT",
@@ -12,7 +12,6 @@
     "bootstrap": "~3.3.6",
     "angular-route": "1.5.x",
     "angular-resource": "1.5.x",
-    "angular-animate": "1.5.x",
-    "mongoose": "4.4.16"
+    "angular-animate": "1.5.x"
   }
 }
